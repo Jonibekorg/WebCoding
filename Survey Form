@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+      <h1 id="title">
+        freeCodeCamp Survey Form
+      </h1>
+      <p id="description">
+        Thank you for taking the time to help us improve the platform
+      </p>
+  <body>
+    <form id="survey-form">
+      <label id="name-label">
+        Name
+      </label>
+      <input id="name" required placeholder="Enter your name" type="text"/>
+      <label id="email-label">
+        Email
+      <label>
+      <input id="email" type="email" required placeholder="Enter your email"/>
+      <label id="number-label">
+        Age(optional)
+      </label>
+      <input id="number" type="number" min="10" max="100" placeholder="Age"/>
+      <p>
+        Which role describes your current role?
+      </p>
+      <select name="dropwdown" id="dropdown">
+       <option selected disabled value="role">Select Your Role</option>
+       <option value="student">
+         Student
+        </option>
+       <option value="full-job">
+         Full Time Job
+        </option>
+       <option value="full-learner">
+         Full Time Learner
+        </option>
+       <option value="not-say">
+         Prefer not to say
+        </option>
+       <option value="other">Others</option>
+      </select>
+      <p>
+        Would you recommend freeCodeCamp to a friend?
+      </p>
+      <input value="definitely" selected type="radio" id="definitely" name="recommendation"/>
+      <label for="definitely">
+        Definitely
+      </label>
+      <input value="maybe" id="maybe" name="recommendation" type="radio"/>
+      <label for="maybe">
+        Maybe
+      </label>
+      <input value="not-sure" type="radio" id="not-sure" name="recommendation"/>
+      <label for="not-sure">
+        Not Sure
+      </label>
+      <p>
+        What is your favorite feature of freeCodeCamp?
+      </p>
+      <select id="feature">
+        <option disabled value="option" selected>
+          Select an option
+        </option>
+        <option value="challenge">
+          Challenges
+        </option>
+        <option value="project">
+          Projects
+        </option>
+        <option value="community">
+          Community
+        </option>
+        <option value="source">
+          Open Source
+        </option>
+      </select>
+      <p>
+        What would you like to see improved? (Check all that apply)
+      </p>
+      <input type="checkbox" id="front" value="front"/>
+      <label for="front">
+        Front-end Projects
+      </label>
+      <input type="checkbox" id="back" value="back"/>
+      <label for="back">
+        Back-end Projects
+      </label>
+      <p>
+        Any comments or suggestions?
+      </p>
+      <textarea id="comments" placeholder="Enter your comment here..." name="comments"></textarea>
+      <button type="submit" id="submit">Submit</button>
+     </form>
+  </body>
+</html>
